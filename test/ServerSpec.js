@@ -134,7 +134,7 @@ describe('', function() {
 
   }); // 'Link creation'
 
-  xdescribe('Priviledged Access:', function() {
+  describe('Priviledged Access:', function() {
 
     // /*  Authentication  */
     // // TODO: xit out authentication
@@ -206,12 +206,12 @@ describe('', function() {
 
   }); // 'Account Creation'
 
-  xdescribe('Account Login:', function() {
+  describe('Account Login:', function() {
 
     beforeEach(function(done) {
       new User({
         'username': 'Phillip',
-        'password': 'Phillip'
+        'password': '$2a$10$cxLBwf.RO2k3462KkKWzuu0YiOuWDMf2K5B15NVfDVfOEgI0QO7lG'
       }).save(function() {
         done();
       });
