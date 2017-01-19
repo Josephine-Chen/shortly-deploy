@@ -39,7 +39,7 @@ describe('', function() {
         .end(done);
     });
 
-    xdescribe('Shortening links:', function() {
+    describe('Shortening links:', function() {
 
       it('Responds with the short code', function(done) {
         request(app)
@@ -88,14 +88,15 @@ describe('', function() {
 
     }); // 'Shortening Links'
 
-    xdescribe('With previously saved urls: ', function() {
+    describe('With previously saved urls: ', function() {
 
       beforeEach(function(done) {
         link = new Link({
           url: 'http://www.roflzoo.com/',
           title: 'Funny pictures of animals, funny dog pictures',
           baseUrl: 'http://127.0.0.1:4568',
-          visits: 0
+          visits: 0,
+          code: '582d6',
         });
 
         link.save(function() {
@@ -205,7 +206,7 @@ describe('', function() {
 
   }); // 'Account Creation'
 
-  describe('Account Login:', function() {
+  xdescribe('Account Login:', function() {
 
     beforeEach(function(done) {
       new User({

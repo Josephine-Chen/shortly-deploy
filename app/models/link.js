@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var linkSchema = new Schema({
   url: String,
-  base_url: String,
+  baseUrl: String,
   code: String,
   title: String,
   visits: {type: Number, default: 0},
