@@ -170,7 +170,7 @@ describe('', function() {
 
   }); // 'Privileged Access'
 
-  xdescribe('Account Creation:', function() {
+  describe('Account Creation:', function() {
 
     it('Signup creates a new user', function(done) {
       request(app)
@@ -211,7 +211,7 @@ describe('', function() {
     beforeEach(function(done) {
       new User({
         'username': 'Phillip',
-        'password': '$2a$10$cxLBwf.RO2k3462KkKWzuu0YiOuWDMf2K5B15NVfDVfOEgI0QO7lG'
+        'password': 'Phillip'
       }).save(function() {
         done();
       });
